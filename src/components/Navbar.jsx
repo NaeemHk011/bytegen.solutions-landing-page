@@ -1,9 +1,19 @@
 'use client'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const navLinks = [
+        { name: 'Pricing', path: '#' },
+        { name: 'About Us', path: '/about' },
+        { name: 'Enterprise', path: '#' },
+        { name: 'Blog', path: '#' },
+        { name: 'Forum', path: '#' },
+        { name: 'Careers', path: '#' }
+    ];
 
     return (
         <div className="fixed top-0 left-0 w-full z-50">
@@ -17,15 +27,21 @@ const Navbar = () => {
                     borderRadius: '24px'
                 }}>
                     {/* Logo */}
-                    <div className="flex items-center mr-8">
+                    <Link to="/" className="flex items-center mr-8">
                         <Logo />
                         <span className="ml-4 text-white text-xl font-extrabold tracking-tight font-sans">BYTEGEN</span>
-                    </div>
+                    </Link>
 
                     {/* Desktop Nav Links */}
                     <div className="hidden md:flex flex-1 justify-center space-x-8">
-                        {['Pricing', 'Features', 'Enterprise', 'Blog', 'Forum', 'Careers'].map(link => (
-                            <a key={link} href="#" className="text-gray-300 text-sm font-medium hover:text-[#6EE7B7] transition-colors uppercase tracking-wider">{link}</a>
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.name}
+                                to={link.path}
+                                className="text-gray-300 text-sm font-medium hover:text-[#6EE7B7] transition-colors uppercase tracking-wider"
+                            >
+                                {link.name}
+                            </Link>
                         ))}
                     </div>
 
@@ -71,15 +87,15 @@ const Navbar = () => {
                     borderRadius: '24px'
                 }}>
                     <div className="flex flex-col space-y-4">
-                        {['Pricing', 'Features', 'Enterprise', 'Blog', 'Forum', 'Careers'].map(link => (
-                            <a
-                                key={link}
-                                href="#"
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.name}
+                                to={link.path}
                                 className="text-gray-300 text-sm font-medium hover:text-[#6EE7B7] transition-colors uppercase tracking-wider text-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                {link}
-                            </a>
+                                {link.name}
+                            </Link>
                         ))}
                         <button className="flex items-center justify-center bg-[#6EE7B7] text-black text-sm font-semibold px-4 py-2 rounded-xl shadow hover:bg-[#34D399] transition-colors mx-auto">
                             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" className="mr-2">

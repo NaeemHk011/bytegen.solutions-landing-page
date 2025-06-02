@@ -1,22 +1,29 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Loader from './components/Loader'
-// import Hero from './components/Hero'
+import Hero2 from './components/Hero2'
+import Services from './components/services'
+import Consulting from './components/consulting'
+import Footer from './components/footer'
+import AboutUs from './components/aboutus'
 
 const App = () => {
   return (
-    <div
-      className='min-h-screen w-full overflow-hidden bg-black relative'
-    >
+    <div className='min-h-screen w-full overflow-hidden bg-black relative'>
       <Navbar />
-      <div className='flex flex-col justify-center items-center w-full h-screen pt-20'>
-        <Loader />
-        <h1 className='text-4xl font-extrabold mt-8 text-center tracking-tight font-sans' style={{
-          background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent'
-        }}>BYTEGEN SOLUTION COMING SOON</h1>
-      </div>
+      
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero2 />
+            <Services />
+            <Consulting />
+          </>
+        } />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+
+      <Footer />
 
       {/* WhatsApp Floating Button */}
       <a
