@@ -6,6 +6,7 @@ import Services from './components/services'
 import Consulting from './components/consulting'
 import Footer from './components/footer'
 import AboutUs from './components/aboutus'
+import ContactUs from './components/ContactUs'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           </>
         } />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
         
       <Footer />

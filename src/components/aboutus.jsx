@@ -16,7 +16,8 @@ const AboutUs = () => {
     { percentage: '23%', text: 'Our services in Europe', icon: (
       <motion.span
         animate={{ rotate: 360 }}
-        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+        className="inline-block"
       >
         🌍
       </motion.span>
@@ -24,7 +25,8 @@ const AboutUs = () => {
     { percentage: '26%', text: 'Our services in Asia', icon: (
       <motion.span
         animate={{ rotate: 360 }}
-        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+        className="inline-block"
       >
         🌏
       </motion.span>
@@ -32,7 +34,8 @@ const AboutUs = () => {
     { percentage: '51%', text: 'Our services in other regions', icon: (
       <motion.span
         animate={{ rotate: 360 }}
-        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+        className="inline-block"
       >
         🌎
       </motion.span>
@@ -351,7 +354,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="p-6 rounded-xl border border-white/10 bg-gradient-to-br from-black/40 to-black/60 backdrop-blur-sm hover:border-[#00c3ff]/30 transition-all"
+                className="p-6 rounded-xl border border-white/10 bg-gradient-to-br from-black/40 to-black/60 backdrop-blur-sm hover:border-[#00c3ff]/30 transition-all group hover:transform hover:scale-105"
               >
                 <div className="text-[#00c3ff] mb-4">
                   {item.icon}
@@ -399,7 +402,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 rounded-xl bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-[#00c3ff]/20 transition-all"
+                className="text-center p-6 rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:border-[#00c3ff]/20 transition-all group hover:transform hover:scale-105"
               >
                 <div className="text-4xl mb-2">{achievement.icon}</div>
                 <div className="text-3xl font-bold bg-gradient-to-r from-[#ff6a00] via-[#ee0979] to-[#00c3ff] bg-clip-text text-transparent">
@@ -434,7 +437,7 @@ const AboutUs = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-center p-6 rounded-xl bg-gradient-to-b from-white/5 to-transparent border border-white/10 hover:border-[#00c3ff]/20"
+                  className="text-center p-6 rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:border-[#00c3ff]/20 group hover:transform hover:scale-105"
                 >
                   <div className="text-4xl mb-4">{stat.icon}</div>
                   <div className="text-3xl font-bold bg-gradient-to-r from-[#ff6a00] via-[#ee0979] to-[#00c3ff] bg-clip-text text-transparent mb-2">
@@ -470,7 +473,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-6 rounded-xl border border-white/10 hover:border-[#00c3ff]/20 transition-all bg-gradient-to-b from-white/5 to-transparent group hover:transform hover:scale-105"
+                className="p-6 rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:border-[#00c3ff]/20 transition-all group hover:transform hover:scale-105"
               >
                 <div className="text-[#00c3ff] mb-4 group-hover:scale-110 transition-transform">
                   {value.icon}
