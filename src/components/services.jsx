@@ -190,12 +190,14 @@ function Services() {
 
               {/* Button */}
               <button className="w-full mt-6 relative group/btn">
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div className="absolute inset-0 rounded-lg transition-all duration-300 group-hover/btn:opacity-100" style={{
                   background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-                  opacity: 0.8
+                  opacity: 0.8,
+                  backgroundSize: '200% 100%',
+                  animation: 'gradientMove 3s linear infinite'
                 }}></div>
-                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-90">
-                Explore Services
+                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-80 group-hover/btn:scale-[0.99] group-hover/btn:text-white">
+                  Explore Services
                 </div>
               </button>
             </div>
@@ -281,11 +283,13 @@ function Services() {
 
               {/* Button */}
               <button className="w-full mt-6 relative group/btn">
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div className="absolute inset-0 rounded-lg transition-all duration-300 group-hover/btn:opacity-100" style={{
                   background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-                  opacity: 0.8
+                  opacity: 0.8,
+                  backgroundSize: '200% 100%',
+                  animation: 'gradientMove 3s linear infinite'
                 }}></div>
-                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-90">
+                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-80 group-hover/btn:scale-[0.99] group-hover/btn:text-white">
                 Discover AI Solutions
                 </div>
               </button>
@@ -367,11 +371,13 @@ function Services() {
 
               {/* Button */}
               <button className="w-full mt-6 relative group/btn">
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div className="absolute inset-0 rounded-lg transition-all duration-300 group-hover/btn:opacity-100" style={{
                   background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-                  opacity: 0.8
+                  opacity: 0.8,
+                  backgroundSize: '200% 100%',
+                  animation: 'gradientMove 3s linear infinite'
                 }}></div>
-                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-90">
+                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-80 group-hover/btn:scale-[0.99] group-hover/btn:text-white">
                   Explore Design Services
                 </div>
               </button>
@@ -453,11 +459,13 @@ function Services() {
 
               {/* Button */}
               <button className="w-full mt-6 relative group/btn">
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div className="absolute inset-0 rounded-lg transition-all duration-300 group-hover/btn:opacity-100" style={{
                   background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-                  opacity: 0.8
+                  opacity: 0.8,
+                  backgroundSize: '200% 100%',
+                  animation: 'gradientMove 3s linear infinite'
                 }}></div>
-                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-90">
+                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-80 group-hover/btn:scale-[0.99] group-hover/btn:text-white">
                   Explore Social Media Services
                 </div>
               </button>
@@ -526,11 +534,13 @@ function Services() {
 
               {/* Button */}
               <button className="w-full mt-6 relative group/btn">
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div className="absolute inset-0 rounded-lg transition-all duration-300 group-hover/btn:opacity-100" style={{
                   background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-                  opacity: 0.8
+                  opacity: 0.8,
+                  backgroundSize: '200% 100%',
+                  animation: 'gradientMove 3s linear infinite'
                 }}></div>
-                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-90">
+                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-80 group-hover/btn:scale-[0.99] group-hover/btn:text-white">
                   Explore Design Services
                 </div>
               </button>
@@ -653,11 +663,13 @@ function Services() {
 
               {/* Button */}
               <button className="w-full mt-6 relative group/btn">
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div className="absolute inset-0 rounded-lg transition-all duration-300 group-hover/btn:opacity-100" style={{
                   background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-                  opacity: 0.8
+                  opacity: 0.8,
+                  backgroundSize: '200% 100%',
+                  animation: 'gradientMove 3s linear infinite'
                 }}></div>
-                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-90">
+                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-80 group-hover/btn:scale-[0.99] group-hover/btn:text-white">
                   Explore SEO Services
                 </div>
               </button>
@@ -757,11 +769,13 @@ function Services() {
 
               {/* Button */}
               <button className="w-full mt-6 relative group/btn">
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div className="absolute inset-0 rounded-lg transition-all duration-300 group-hover/btn:opacity-100" style={{
                   background: 'linear-gradient(90deg, #ff6a00, #ee0979, #00c3ff, #6ee7b7)',
-                  opacity: 0.8
+                  opacity: 0.8,
+                  backgroundSize: '200% 100%',
+                  animation: 'gradientMove 3s linear infinite'
                 }}></div>
-                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-90">
+                <div className="relative px-4 py-2 bg-[#0C0C0C] rounded-lg m-[1px] text-[#6ee7b7] text-sm font-medium transition-all duration-300 group-hover/btn:bg-opacity-80 group-hover/btn:scale-[0.99] group-hover/btn:text-white">
                   Explore Support Services
                 </div>
               </button>
